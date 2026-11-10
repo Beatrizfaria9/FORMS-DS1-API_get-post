@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Jogos</title>
+    <link rel="stylesheet" href="../css/get.css" />
+    <script src="../js/get.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <h1>Lista de Jogos</h1>
+        <p>Veja abaixo a lista de jogos</p>
+    </header>
+    <main>
+        <p><a href="../index.html">Voltar para o cadastro</a></p>
+        <section id ="container-titulo-lista">
+            <h2 id="titulo-lista">Jogos cadastrados</h2>
+            <p>Os jogos são exibidos automaticamente ao abrir a página</p>
+            <p id="resposta"></p>
+            <ul id="lista-jogos"></ul>
+        </section>
+    </main>
+
+<template id="modelo-jogo">
+    <li>
+        <section class="card-capa">
+            <span class="sem-imagem">Imagem indisponível</span>
+            <img class="imagem-jogo" alt="">
+        </section>
+
+        <section class="card-conteudo">
+            <h3 class="nome">Nome</h3>
+
+            <p><strong>Gênero:</strong> <span class="genero"></span></p>
+
+            <p><strong>Plataforma:</strong> <span class="plataforma"></span></p>
+
+            <p><strong>Ano de Lançamento:</strong> <span class="ano_lancamento"></span></p>
+
+            <p><strong>Desenvolvedora:</strong> <span class="desenvolvedora"></span></p>
+        </section>
+    </li>
+</template>
+
+    </body>
+</html>
